@@ -6,13 +6,15 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import * as firebase from 'firebase';
 
 var firebaseConfig = {
-    apiKey: "AIzaSyCQduzotX5LtXwYFHCvvhLBWeqKlPP0_C0",
-    authDomain: "chatsimple-965a9.firebaseapp.com",
-    databaseURL: "https://chatsimple-965a9.firebaseio.com",
-    projectId: "chatsimple-965a9",
-    storageBucket: "chatsimple-965a9.appspot.com",
-    messagingSenderId: "667987505749",
-    appId: "1:667987505749:web:96c2b31dbde67b8108dadc"
+    //Aqui tienen que copiar todo lo que esta en su firebase
+    //No deben dejar vacio ninguna variable
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: ""
   };
 
 @Component({
