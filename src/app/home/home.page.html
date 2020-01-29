@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Chat Simple
+      <ion-input placeholder="Quien eres?" [(ngModel)]="username"></ion-input>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content #content padding id="content">
+  <div class="ion-padding">
+    <ion-card *ngFor="let message of messages">
+        <ion-card-header>
+            {{message.nombre}} dice:
+        </ion-card-header>
+        <ion-card-content>
+          {{message.mensaje}}
+        </ion-card-content>
+    </ion-card>
+    <ion-footer>
+      <ion-toolbar>
+        <ion-input placeholder="Escribe Algo..." [(ngModel)]="message"> </ion-input>
+        <ion-buttons slot="end">
+          <button ion-button icon-rigth (click)="sendMessages()">
+            Enviar
+            <ion-icon name="send"></ion-icon>
+          </button>
+        </ion-buttons>
+      </ion-toolbar>
+
+    </ion-footer>
+    
+  </div>
+</ion-content>
